@@ -46,7 +46,7 @@ background: url(images/slide_btn1.png) no-repeat 0 0;text-indent: -9999px;overfl
 .company{color: #043285;font-weight: bold;position: relative;font-size: 14px;}
 
 .company::after{content:""; width: 2px;height: 14px;background-color: #ccc;position: absolute;left: 30px;top: 3px;}
-.content2>ul>li span{margin-left: 10px;color: #ccc;;}
+.content2>ul>li span{margin-left: 10px;color: black;;}
 .content2>ul>li p:last-of-type{font-weight: bold;font-size: 16px;}
 
 .content2>ul>li:hover {

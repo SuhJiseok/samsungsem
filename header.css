@@ -39,7 +39,7 @@ background: #fff url(images/btn_arrow_ico_l.png) no-repeat 95% 50%;text-align: l
 .gnb_button>a>strong{font-size: 18px;font-weight: 600;}
 nav.gnb>ul>li:nth-child(1)>div>div.gnb_button>a{width: 780px;background-position: 97% 50%;}
 nav.gnb>ul>li:nth-child(1)>div>div.gnb_button>a>strong{color: #1428a0}
-nav.gnb>ul>li:nth-child(4)>div>div.gnb_button>a>{width: 320px;margin-right: 15px;}
+nav.gnb>ul>li:nth-child(4)>div>div.gnb_button>a{width: 320px;margin-right: 15px;}
 nav.gnb>ul>li:nth-child(4)>div>div.gnb_button{display:inline-block;}
 /* 탑메뉴 */
 dl.topMenu{position: absolute;right: 60px;top: 0;}
