@@ -5,7 +5,7 @@ h1.logo{position: absolute;left: 30px;top: 18px;}
 h1.logo>a{display: block;width: 176px;height: 36px; background: url(images/logo.png) no-repeat 0 0;text-indent: -9999px;overflow: hidden;}
 
 /* 주메뉴 */
-nav.gnb{}
+
 nav.gnb>ul{width: 100%;display: flex;flex-direction: row;justify-content: center; text-align: center; /*<- text-align center 이유 하위 ul li 들 가운데 배치하기 위해 */ }
 nav.gnb>ul>li{display: inline-block; padding: 0 45px;line-height: 70px;}
 nav.gnb>ul>li>a{display: inline-block;position: relative; font-weight: 600;font-size: 18px;color: #000;}
