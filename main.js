@@ -24,10 +24,6 @@ stp1btn[i].addEventListener("click",e=>{
 
 
 
-
-
-
-
 for(let i=0;i<gnbmenu.length;i++){
   gnbmenu[i].addEventListener("mouseover", e=>{
     e.preventDefault;
@@ -197,5 +193,33 @@ window.addEventListener('scroll', ()=> {
 })
 
 // sub1.js
+// 스크롤시에 요소들 하나씩 보이게
+
+function isElementVisible(element) {
+  const elementPosition = element.getBoundingClientRect().top;
+  const screenHeight = window.innerHeight;
+  return elementPosition < screenHeight;
+}
+
+function showOnScroll() {
+  const scrollFadeElements = document.querySelectorAll(".scroll-fade");
+
+  for (const element of scrollFadeElements) {
+    if (isElementVisible(element)) {
+      element.classList.add("visible");
+    } else {
+      element.classList.remove("visible");
+    }
+  }
+}
+
+window.addEventListener("scroll", showOnScroll);
+
+// 페이지 로딩 시 첫 화면에 있는 요소가 보이도록 함
+document.addEventListener("DOMContentLoaded", showOnScroll);
 
 });
+
+
+
+

@@ -35,7 +35,18 @@ background: url(images/slide_btn1.png) no-repeat 0 0;text-indent: -9999px;overfl
 /* container */
 #container{width: 100%; /*background: url(../images/bg_newsroom.jpg) no-repeat;*/}
 /* content2 */
-.content2>h2{font-size: 34px;font-weight: bold;text-align: center;line-height: 1;margin-bottom: 70px;margin-top: 80px;}
+.content2>h2{font-size: 34px;font-weight: bold;text-align: center;line-height: 1;margin-bottom: 70px;margin-top: 80px;
+}
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.scroll-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 .content2>ul{/*border: 1px solid red;*/position: relative;display: flex;justify-content: space-between;width: 1200px;margin: 0 auto;}
 .content2>ul>li{/*border: 1px solid black;*/width: 320px;height: 280px;position: relative;}
 .content2>ul>li div:first-of-type{width: 319px;height: 180px;/*border: 1px solid blue;*/}
